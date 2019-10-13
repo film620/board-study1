@@ -1,0 +1,15 @@
+<h1>Homes#Edit</h1>
+
+
+ <form action="/homes/update/<%=@edit.id%>" method="get">
+    제목:<input type="text" name="title" value="<%=@edit.title%>"><br>
+    내용:<input type="text" name="content"  value="<%=@edit.content%>"><br>
+    작성자:<input type="text" name="name"  value="<%=@edit.name%>"><br>
+    비밀번호:<input type="password" name="password"  value="<%=@edit.password%>"><br>
+   <input type="submit" value="수정">
+ </form>   
+
+<br>
+
+
+<a href="/homes/index">수정 없이 처음 화면으로 가기</a>
